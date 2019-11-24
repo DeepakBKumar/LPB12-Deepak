@@ -46,10 +46,12 @@ public class LoginTests {
 		driver.quit();
 	}
 	@Test
-	public void validLoginTest() {
+	public void validLoginTest() throws InterruptedException {
+		loginPOM.clickUserIcon();
 		loginPOM.sendUserName("admin");
-		loginPOM.sendPassword("admin@123");
+		loginPOM.sendPassword("admin123");
 		loginPOM.clickLoginBtn(); 
-		screenShot.captureScreenShot("First");
+		Thread.sleep(3000);
+		screenShot.captureScreenShot("screenshots/First");
 	}
 }
