@@ -51,7 +51,7 @@ public class Elearning_Simple_Tests {
 		Thread.sleep(1000);
 		driver.quit();
 	}
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void validLoginTest() throws InterruptedException {
 		loginPOM.sendUserName("DeepakBKumar");
 		loginPOM.sendPassword("deepbkum@in.ibm.com");
@@ -85,7 +85,7 @@ public class Elearning_Simple_Tests {
 	}
 	
 
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void validMyCourseDetails() throws InterruptedException {
 		loginPOM.sendUserName("DeepakBKumar");
 		loginPOM.sendPassword("deepbkum@in.ibm.com");
