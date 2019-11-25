@@ -13,8 +13,7 @@ private WebDriver driver;
 	public Elearning_LoginPOM(WebDriver driver) {
 		this.driver = driver; 
 		PageFactory.initElements(driver, this);
-	}
-		
+	}		
 	
 	@FindBy(id="login")
 	private WebElement userName; 

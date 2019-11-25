@@ -87,7 +87,6 @@ private WebDriver driver;
 		System.out.println(checkText);
 		Assert.assertEquals("The file has been added to the list of publications.", checkText);
 		System.out.println("test complete");
-	}
-		
+	}		
 	
 }
